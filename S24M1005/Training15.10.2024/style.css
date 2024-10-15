@@ -1,0 +1,85 @@
+/* Base styles (mobile first) */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+aside {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 956px) {
+  body {
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  article {
+    flex: 2;
+    margin-right: 15px;
+  }
+
+  aside {
+    flex: 1;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    width: 50%;
+  }
+}
