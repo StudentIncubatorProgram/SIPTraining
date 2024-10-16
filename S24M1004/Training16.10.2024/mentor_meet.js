@@ -1,5 +1,5 @@
 /*ES6+ Features*/ 
-//ArrowFunctions
+//ArrowFunction
 //Arrow Function with no parameters
 const hello = () => {
     console.log("Hello");
