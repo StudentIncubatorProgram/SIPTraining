@@ -1,0 +1,30 @@
+div{
+    height: 200;
+    width: 200;
+    background-color: brown;
+    animation: roll 4s 3;
+}
+@media all and (min-width:200px) and (max-width:720px) {
+    body{
+        background-color: yellow;
+    }
+    
+}
+@keyframes roll {
+    0%{
+        transform: translateX(0) rotate(0);
+    }
+    25%{
+        transform: translateX(50px) rotate(180deg);
+    }
+    50%{
+        transform: translateX(100px) rotate(360deg);
+    }
+    75%{
+        transform: translateX(50px) rotate(180deg);
+    }
+    100%{
+        transform: translateX(0) rotate(0);
+    }
+    
+}
