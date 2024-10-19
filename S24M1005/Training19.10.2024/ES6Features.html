@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>es6</title>
+  </head>
+  <body>
+    ES6 Topics
+
+    <script>
+      // let and const
+
+      // let
+      let varName = 55;
+      let varName2 = 30;
+      varName = 20;
+      console.log(varName);
+      console.log(varName2);
+
+      //   const
+      const sip = 60;
+      console.log(sip);
+
+      // arrow functions
+
+      const add = (a, b) => a + b;
+      console.log(add("string", "sip"));
+
+      // template for literals
+
+      const name = 23;
+      const greeting = `Welcome to ${name}!`;
+
+      console.log(greeting);
+
+      // destructuring
+
+      const obj1 = { first: "string", second: "sip" };
+      const { first, second } = obj1;
+
+      console.log(first);
+      console.log(second);
+
+      // rest and spread operators
+
+      // rest
+      function addition(...numbers) {
+        return numbers.reduce((a, b) => a + b, 0);
+      }
+
+      console.log(addition(1, 2, 3));
+
+      // spread
+      const arr1 = [1, 2];
+      const arr2 = [...arr1, 3, 4, 5, 6];
+
+      console.log(arr1);
+      console.log(arr2);
+
+      // default parameters
+
+      // classes
+
+      // modules (import/export)
+
+      // promises
+
+      // array methods
+      
+    </script>
+  </body>
+</html>
